@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قسم الهندسة الإنشائية | TOBIM</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Cairo', sans-serif; }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+        }
+        .glow-effect:hover {
+            box-shadow: 0 0 30px rgba(37, 99, 235, 0.3);
+            border-color: rgba(59, 130, 246, 0.6);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between selection:bg-blue-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="w-full border-b border-slate-800/60 backdrop-blur-md bg-slate-900/80 fixed top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-black tracking-wider text-blue-500 flex items-center gap-2">
+                TOBIM
+                <span class="text-xs px-2.5 py-0.5 rounded-full bg-blue-500/10 text-blue-400 border border-blue-500/20">القسم الإنشائي</span>
+            </a>
+            <nav class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
+                <a href="index.html" class="hover:text-blue-400 transition">الرئيسية المركزية</a>
+                <a href="#overview" class="hover:text-blue-400 transition">نظرة عامة</a>
+                <a href="#roadmap" class="hover:text-blue-400 transition">خريطة الطريق</a>
+                <a href="#curriculum" class="hover:text-blue-400 transition">المنهج</a>
+                <a href="#faq" class="hover:text-blue-400 transition">الأسئلة الشائعة</a>
+            </nav>
+            <div>
+                <a href="https://api.whatsapp.com/send?phone=201030134248" target="_blank" class="px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold transition shadow-lg shadow-blue-600/20">احجز مكانك الآن</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="flex-grow pt-40 pb-20 px-6">
+        <div class="max-w-5xl mx-auto text-center mb-20">
+            <span class="px-4 py-1.5 rounded-full bg-blue-500/10 text-blue-400 text-xs font-semibold border border-blue-500/20 mb-6 inline-block">دبلومة BIM Technical Office الإنشائية</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                تعلم إزاي تبقى مهندس مكتب فني BIM <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-blue-600">مش مجرد حد بيعمل موديل على Revit</span>
+            </h1>
+            <p class="text-slate-400 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
+                دبلومة عملية متكاملة تجمع بين تكنولوجيا الـ BIM ومعرفة المكتب الفني الإنشائي — من الموديل، للـ Coordination، للـ Shop Drawings، والتخطيط بالـ 4D/5D.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://api.whatsapp.com/send?phone=201030134248" target="_blank" class="px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold transition shadow-xl shadow-blue-600/30">احجز مكانك في الدفعة القادمة</a>
+                <a href="#curriculum" class="px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 font-bold transition">استعرض المنهج الكامل</a>
+            </div>
+        </div>
+
+        <!-- Problem vs Methodology Section -->
+        <section id="overview" class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-28">
+            <div class="glass-card p-8 md:p-10 rounded-3xl border border-red-500/20">
+                <h3 class="text-2xl font-bold text-red-400 mb-4">المشكلة: تتعلم برنامج بس</h3>
+                <ul class="space-y-4 text-slate-400">
+                    <li class="flex items-start gap-3">❌ تتعلم أدوات Revit من غير سياق مشروع حقيقي</li>
+                    <li class="flex items-start gap-3">❌ موديل من غير معايير مكتب فني (Standard)</li>
+                    <li class="flex items-start gap-3">❌ مفيش ربط بالـ Coordination أو Shop Drawings</li>
+                    <li class="flex items-start gap-3">❌ تخرج "BIM Modeler" بس من غير خبرة تنفيذية</li>
+                </ul>
+            </div>
+
+            <div class="glass-card p-8 md:p-10 rounded-3xl border border-blue-500/30 glow-effect">
+                <h3 class="text-2xl font-bold text-blue-400 mb-4">الحل: منهجية TOBIM</h3>
+                <ul class="space-y-4 text-slate-300">
+                    <li class="flex items-start gap-3">✅ تعلم كل أداة جوه سياق مشروع حقيقي كامل</li>
+                    <li class="flex items-start gap-3">✅ موديل بمعايير Technical Office فعلية</li>
+                    <li class="flex items-start gap-3">✅ تنسيق تام مع باقي التخصصات (Coordination)</li>
+                    <li class="flex items-start gap-3">✅ تخرج <b>مهندس مكتب فني BIM</b> معتمد ومؤهل</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Roadmap & Curriculum Overview -->
+        <section id="roadmap" class="max-w-6xl mx-auto mb-28 text-center">
+            <span class="text-blue-400 font-semibold text-sm tracking-wider uppercase">خريطة الطريق</span>
+            <h2 class="text-3xl md:text-5xl font-bold text-white mt-2 mb-6">18 مرحلة تعليمية متكاملة</h2>
+            <p class="text-slate-400 max-w-2xl mx-auto mb-12">من أساسيات الـ BIM Fundamentals وحتى تخطيط وإدارة الإنشاءات باحترافية عالية.</p>
+            
+            <div id="curriculum" class="grid grid-cols-1 md:grid-cols-3 gap-6 text-right">
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="text-blue-400 font-bold text-xl mb-2">01</div>
+                    <h4 class="text-white font-bold text-lg mb-2">أساسيات الـ BIM والموديل</h4>
+                    <p class="text-slate-400 text-sm">البداية الصحيحة وفهم بيئة العمل وأدوات النمذجة الإنشائية.</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="text-blue-400 font-bold text-xl mb-2">02</div>
+                    <h4 class="text-white font-bold text-lg mb-2">الـ Coordination والتنسيق</h4>
+                    <p class="text-slate-400 text-sm">ربط التخصصات وكشف التعارضات وحل المشكلات الهندسية.</p>
+                </div>
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="text-blue-400 font-bold text-xl mb-2">03</div>
+                    <h4 class="text-white font-bold text-lg mb-2">الـ Shop Drawings والكميات</h4>
+                    <p class="text-slate-400 text-sm">استخراج اللوحات التنفيذية وحصر الكميات والتقارير بدقة.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="max-w-4xl mx-auto glass-card p-10 md:p-14 rounded-3xl text-center glow-effect">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-4">جاهز تبدأ مسارك المهني في الـ BIM؟</h2>
+            <p class="text-slate-400 mb-8 max-w-xl mx-auto">التدريب يبدأ الشهر القادم مع دبلومة TOBIM الإنشائية المعتمدة.</p>
+            <a href="https://api.whatsapp.com/send?phone=201030134248" target="_blank" class="inline-block px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold transition shadow-xl shadow-blue-600/30">
+                احجز مكانك عبر WhatsApp الآن
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-900 bg-slate-950 py-8 text-center text-slate-500 text-sm">
+        <p>جميع الحقوق محفوظة لشركة TOBIM © 2026 — القسم الإنشائي</p>
+    </footer>
+
+</body>
+</html>
