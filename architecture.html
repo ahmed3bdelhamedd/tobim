@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قسم الهندسة المعمارية | TOBIM</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Cairo', sans-serif; }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.7);
+            backdrop-filter: blur(16px);
+            border: 1px solid rgba(51, 65, 85, 0.5);
+        }
+        .glow-effect:hover {
+            box-shadow: 0 0 30px rgba(59, 130, 246, 0.3);
+            border-color: rgba(59, 130, 246, 0.6);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between selection:bg-blue-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="w-full border-b border-slate-800/60 backdrop-blur-md bg-slate-900/80 fixed top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-black tracking-wider text-blue-500 flex items-center gap-2">
+                TOBIM
+                <span class="text-xs px-2.5 py-0.5 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">القسم المعماري</span>
+            </a>
+            <nav class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
+                <a href="index.html" class="hover:text-blue-400 transition">الرئيسية المركزية</a>
+                <a href="#challenge" class="hover:text-blue-400 transition">التحدي</a>
+                <a href="#curriculum" class="hover:text-blue-400 transition">المحتوى</a>
+                <a href="#features" class="hover:text-blue-400 transition">التقنيات (AI & Dynamo)</a>
+            </nav>
+            <div>
+                <a href="https://wa.me/201017522873" target="_blank" class="px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold transition shadow-lg shadow-blue-600/20">احجز مكانك الآن</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main class="flex-grow pt-40 pb-20 px-6">
+        <div class="max-w-5xl mx-auto text-center mb-20">
+            <span class="px-4 py-1.5 rounded-full bg-indigo-500/10 text-indigo-400 text-xs font-semibold border border-indigo-500/20 mb-6 inline-block">Architectural Technical BIM Diploma Challenge</span>
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6 leading-tight">
+                ٦ شهور مش مجرد دراسة… <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-indigo-400 to-indigo-600">٦ شهور شغل وتطبيق وتطوير.</span>
+            </h1>
+            <p class="text-slate-400 text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed" dir="ltr">
+                Architecture + BIM + Technical Office + Interior + Automation + AI + Portfolio
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="https://wa.me/201017522873" target="_blank" class="px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold transition shadow-xl shadow-blue-600/30">احجز مكانك في الدفعة القادمة</a>
+                <a href="#curriculum" class="px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 font-bold transition">استعرض محتوى الدبلومة</a>
+            </div>
+        </div>
+
+        <!-- Portfolio Proof Section -->
+        <section id="challenge" class="max-w-6xl mx-auto glass-card p-8 md:p-12 rounded-3xl mb-28 text-center glow-effect">
+            <span class="text-indigo-400 font-semibold text-sm uppercase tracking-wider">Interview Proof</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mt-2 mb-4">كتير من المهندسين أول ما يدخلوا Interview بيتسألوا:</h2>
+            <p class="text-2xl text-blue-400 font-bold mb-8">«اشتغلت على إيه قبل كده؟»</p>
+            <p class="text-slate-400 text-lg max-w-2xl mx-auto mb-8">إحنا عايزين إجابتك تكون في الـ Portfolio بتاعك. شغلك هو أقوى إجابة (Your Portfolio Is Your Proof).</p>
+            <div class="inline-block px-6 py-3 rounded-xl bg-slate-900/80 border border-slate-800 text-slate-300 font-mono text-sm" dir="ltr">
+                Projects + Tasks + Drawings + Models + Interior + Visuals + Coordination + Dynamo + AI = PORTFOLIO
+            </div>
+        </section>
+
+        <!-- Software User vs Workflow Engineer -->
+        <section class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 mb-28">
+            <div class="glass-card p-8 md:p-10 rounded-3xl border border-red-500/20">
+                <h3 class="text-2xl font-bold text-red-400 mb-4">Software User</h3>
+                <ul class="space-y-4 text-slate-400">
+                    <li class="flex items-start gap-3">❌ بيعرف الأوامر، بس مش عارف يبدأ منين في مشروع حقيقي</li>
+                    <li class="flex items-start gap-3">❌ بيعمل موديل من غير نظام تسمية ولا Template</li>
+                    <li class="flex items-start gap-3">❌ الرسومات بتطلع مش متسقة ومحتاجة تعديل يدوي</li>
+                    <li class="flex items-start gap-3">❌ مفيش Coordination مع باقي التخصصات</li>
+                    <li class="flex items-start gap-3">❌ لما يتسأل «اشتغلت على إيه؟» ملوش إجابة</li>
+                </ul>
+            </div>
+
+            <div class="glass-card p-8 md:p-10 rounded-3xl border border-blue-500/30 glow-effect">
+                <h3 class="text-2xl font-bold text-blue-400 mb-4">مهندس فاهم Workflow</h3>
+                <ul class="space-y-4 text-slate-300">
+                    <li class="flex items-start gap-3">✅ بيبدأ من Template وإعدادات مظبوطة قبل أول Wall</li>
+                    <li class="flex items-start gap-3">✅ الموديل بيغذّي الـ Sheets والـ Schedules تلقائي</li>
+                    <li class="flex items-start gap-3">✅ بيراجع الـ Clashes بـ Navisworks ويحلّها بمنهجية</li>
+                    <li class="flex items-start gap-3">✅ بيستخدم Dynamo و AI جوه الـ Workflow مش برّه</li>
+                    <li class="flex items-start gap-3">✅ عنده Portfolio يفتحه ويتكلم عنه بثقة</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Core Pillars: Interior, AI, Dynamo, Visualization -->
+        <section id="features" class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-28">
+            <div class="glass-card p-8 rounded-2xl">
+                <div class="text-indigo-400 font-bold text-2xl mb-4">🛋️</div>
+                <h4 class="text-white font-bold text-xl mb-3">Interior Design</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">من الـ Mood Board وتطوير الفكرة، لحد الـ Working Drawings والـ Shop Drawings وتفاصيل الحوائط والإضاءة المخفية.</p>
+            </div>
+            <div class="glass-card p-8 rounded-2xl">
+                <div class="text-indigo-400 font-bold text-2xl mb-4">🎨</div>
+                <h4 class="text-white font-bold text-xl mb-3">Visualization</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">مسار الإظهار كامل — من Revit لـ Enscape و Twinmotion ولحد الـ AI Rendering بأعلى جودة واقعية.</p>
+            </div>
+            <div class="glass-card p-8 rounded-2xl">
+                <div class="text-indigo-400 font-bold text-2xl mb-4">⚡</div>
+                <h4 class="text-white font-bold text-xl mb-3">Dynamo & AI</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">استخدام Dynamo لتقليل الشغل المتكرر (مثل Clash Point), والاستعانة بالـ AI كمساعد ذكي داخل الـ Workflow المعماري.</p>
+            </div>
+        </section>
+
+        <!-- Curriculum & Roadmap Overview -->
+        <section id="curriculum" class="max-w-4xl mx-auto glass-card p-10 md:p-14 rounded-3xl text-center glow-effect">
+            <span class="text-indigo-400 font-semibold text-sm uppercase tracking-wider">محتوى الدبلومة الشامل</span>
+            <h2 class="text-3xl md:text-4xl font-bold text-white mt-2 mb-4">١٤ محور تدريبي مترتبين باحترافية</h2>
+            <p class="text-slate-400 mb-8 max-w-xl mx-auto">فيديوهات مسجّلة أسبوعياً + Meeting أسبوعي Live على Zoom للمتابعة والمناقشة وحل المشاكل.</p>
+            <a href="https://wa.me/201017522873" target="_blank" class="inline-block px-8 py-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white font-bold transition shadow-xl shadow-blue-600/30">
+                احجز مكانك في التحدي عبر WhatsApp
+            </a>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-slate-900 bg-slate-950 py-8 text-center text-slate-500 text-sm">
+        <p>جميع الحقوق محفوظة لشركة TOBIM © 2026 — القسم المعماري</p>
+    </footer>
+
+</body>
+</html>
