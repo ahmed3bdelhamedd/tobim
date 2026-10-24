@@ -1,6 +1,45 @@
-<?php include 'includes/header.php'; ?>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOBIM | المنصة الهندسية المتكاملة</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Cairo', sans-serif; }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(51, 65, 85, 0.4);
+        }
+        .glow-effect:hover {
+            box-shadow: 0 0 25px rgba(37, 99, 235, 0.25);
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen flex flex-col justify-between selection:bg-blue-500 selection:text-white">
 
-    <!-- Hero Section -->
+    <!-- Navigation Bar -->
+    <header class="w-full border-b border-slate-800/60 backdrop-blur-md bg-slate-900/80 fixed top-0 z-50">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="text-2xl font-black tracking-wider text-blue-500 flex items-center gap-2">
+                TOBIM
+                <span class="text-xs px-2 py-0.5 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20">Unified</span>
+            </div>
+            <nav class="hidden md:flex gap-8 text-sm font-medium text-slate-300">
+                <a href="#index.html" class="hover:text-blue-400 transition">الرئيسية</a>
+                <a href="#services" class="hover:text-blue-400 transition">الخدمات الإنشائية</a>
+                <a href="#academy" class="hover:text-blue-400 transition">الأكاديمية</a>
+            </nav>
+            <div>
+                <a href="#contact" class="px-5 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-sm font-semibold transition shadow-lg shadow-blue-600/20">تواصل معنا</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Hero Section -->
     <main class="flex-grow pt-36 pb-20 px-6">
         <div class="max-w-5xl mx-auto text-center">
             <span class="px-4 py-1.5 rounded-full bg-blue-500/10 text-blue-400 text-xs font-semibold border border-blue-500/20 mb-6 inline-block">المنظومة الرقمية الموحدة لـ TOBIM</span>
@@ -49,4 +88,16 @@
         </section>
     </main>
 
-<?php include 'includes/footer.php'; ?>
+    <!-- Footer -->
+    <footer class="border-t border-slate-900 bg-slate-950 py-10 text-center text-slate-500 text-sm mt-auto">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            <p>جميع الحقوق محفوظة لشركة TOBIM © 2026</p>
+            <div class="flex gap-6 text-slate-400">
+                <a href="#" class="hover:text-blue-400 transition">سياسة الخصوصية</a>
+                <a href="#" class="hover:text-blue-400 transition">الشروط والأحكام</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
